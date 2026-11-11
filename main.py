@@ -33,4 +33,5 @@ def main():
         elif choice == 4:
             print('goodbye')
             is_active = False
-main()
+if __name__ == '__main__':
+    main()
