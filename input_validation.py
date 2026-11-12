@@ -9,11 +9,11 @@ def valid_name():
     return valid 
 
 
-def valid_num(num):
+def valid_num(num,text):
     valid = False
     while not valid:
         try:
-            num = int(input(f"Enter number(1-{num}): ").strip())
+            num = int(input(text.strip()))
             if 0 < num < num + 1:
                 valid = num
             else:

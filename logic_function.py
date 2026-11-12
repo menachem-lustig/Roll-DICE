@@ -28,7 +28,7 @@ def play_round():
 
 def start_game():
     name = valid_name()
-    rounds_number = valid_num(10)
+    rounds_number = valid_num(10,'Enter the rounds number: ')
     show_start_game(name,rounds_number)
     current_round = 0
     computer_score = 0

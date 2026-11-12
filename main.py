@@ -20,7 +20,7 @@ def main():
     is_active = True
     while is_active:
         menu()
-        choice = valid_num(4)
+        choice = valid_num(4,'Enter your choose.: ')
         if choice == 1:
             game = start_game()
             display_game_results(game)
@@ -33,5 +33,7 @@ def main():
         elif choice == 4:
             print('goodbye')
             is_active = False
+        else:
+            print('Enter number only between 1-4')
 if __name__ == '__main__':
     main()
